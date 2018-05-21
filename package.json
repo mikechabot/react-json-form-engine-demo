@@ -2,6 +2,7 @@
   "name": "react-form-engine-storybook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mikechabot.github.io/react-json-form-engine-storybook",
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
