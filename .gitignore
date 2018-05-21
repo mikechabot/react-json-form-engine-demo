@@ -11,6 +11,8 @@
 
 /.idea/*
 
+/src/scss/*.css
+
 *.iml
 
 # misc

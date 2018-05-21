@@ -10,7 +10,7 @@ function Footer() {
                     <p>
                         <strong className="has-text-grey-light">
                             <Icon icon="cube" />
-                            &nbsp;react-form-engine
+                            &nbsp;react-json-form-engine
                         </strong>{' '}
                         by{' '}
                         <a
@@ -23,14 +23,14 @@ function Footer() {
                         <br />
                         The{' '}
                         <a
-                            href="https://github.com/mikechabot/react-form-engine"
+                            href="https://github.com/mikechabot/react-json-form-engine"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             source code
                         </a>{' '}
                         is licensed under{' '}
-                        <a href="https://github.com/mikechabot/react-form-engine/blob/master/LICENSE">
+                        <a href="https://github.com/mikechabot/react-json-form-engine/blob/master/LICENSE">
                             MIT
                         </a>
                     </p>
@@ -38,20 +38,20 @@ function Footer() {
                         <GithubButton
                             label="Star"
                             icon="octicon-star"
-                            href="mikechabot/react-form-engine"
-                            ariaLabel="Star mikechabot/react-boilerplate on GitHub"
+                            href="mikechabot/react-json-form-engine"
+                            ariaLabel="Star mikechabot/react-json-form-engine on GitHub"
                         />
                         <GithubButton
                             label="Fork"
                             icon="octicon-repo-forked"
-                            href="mikechabot/react-form-engine/fork"
-                            ariaLabel="Fork mikechabot/react-form-engine on GitHub"
+                            href="mikechabot/react-json-form-engine/fork"
+                            ariaLabel="Fork mikechabot/react-json-form-engine on GitHub"
                         />
                         <GithubButton
                             label="Watch"
                             icon="octicon-eye"
-                            href="mikechabot/react-form-engine/subscription"
-                            ariaLabel="Watch mikechabot/react-form-engine on GitHub"
+                            href="mikechabot/react-json-form-engine/subscription"
+                            ariaLabel="Watch mikechabot/react-json-form-engine on GitHub"
                         />
                     </Flex>
                 </div>

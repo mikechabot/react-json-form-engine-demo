@@ -58,8 +58,8 @@ class App extends React.Component {
             <Navbar
                 id="main-nav"
                 icon="cube"
-                url="http://www.github.com/mikechabot/react-form-engine"
-                label="react-form-engine"
+                url="http://www.github.com/mikechabot/react-json-form-engine"
+                label="react-json-form-engine"
             />
         );
     }

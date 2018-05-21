@@ -5,5 +5,5 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './scss/index.css';
 
-ReactDOM.render(<App />, document.getElementById('react-form-engine'));
+ReactDOM.render(<App />, document.getElementById('react-json-form-engine'));
 registerServiceWorker();
