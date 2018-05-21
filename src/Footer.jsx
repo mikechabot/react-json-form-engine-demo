@@ -35,24 +35,24 @@ function Footer() {
                         </a>
                     </p>
                     <Flex hAlignCenter>
-                        {/* <GithubButton */}
-                        {/* label="Star" */}
-                        {/* icon="octicon-star" */}
-                        {/* href="mikechabot/react-form-engine" */}
-                        {/* ariaLabel="Star mikechabot/react-boilerplate on GitHub" */}
-                        {/* /> */}
-                        {/* <GithubButton */}
-                        {/* label="Fork" */}
-                        {/* icon="octicon-repo-forked" */}
-                        {/* href="mikechabot/react-form-engine/fork" */}
-                        {/* ariaLabel="Fork mikechabot/react-form-engine on GitHub" */}
-                        {/* /> */}
-                        {/* <GithubButton */}
-                        {/* label="Watch" */}
-                        {/* icon="octicon-eye" */}
-                        {/* href="mikechabot/react-form-engine/subscription" */}
-                        {/* ariaLabel="Watch mikechabot/react-form-engine on GitHub" */}
-                        {/* /> */}
+                        <GithubButton
+                            label="Star"
+                            icon="octicon-star"
+                            href="mikechabot/react-form-engine"
+                            ariaLabel="Star mikechabot/react-boilerplate on GitHub"
+                        />
+                        <GithubButton
+                            label="Fork"
+                            icon="octicon-repo-forked"
+                            href="mikechabot/react-form-engine/fork"
+                            ariaLabel="Fork mikechabot/react-form-engine on GitHub"
+                        />
+                        <GithubButton
+                            label="Watch"
+                            icon="octicon-eye"
+                            href="mikechabot/react-form-engine/subscription"
+                            ariaLabel="Watch mikechabot/react-form-engine on GitHub"
+                        />
                     </Flex>
                 </div>
             </div>
@@ -60,21 +60,21 @@ function Footer() {
     );
 }
 
-// function GithubButton({ label, icon, href, ariaLabel }) {
-//     return (
-//         <div style={{ margin: 5 }}>
-//             <a
-//                 className="github-button"
-//                 href={`https://github.com/${href}`}
-//                 data-icon={icon}
-//                 data-size="large"
-//                 data-show-count={true}
-//                 aria-label={ariaLabel}
-//             >
-//                 {label}
-//             </a>
-//         </div>
-//     );
-// }
+const GithubButton = ({ label, icon, href, ariaLabel }) => {
+    return (
+        <div style={{ margin: 5 }}>
+            <a
+                className="github-button"
+                href={`https://github.com/${href}`}
+                data-icon={icon}
+                data-size="large"
+                data-show-count={true}
+                aria-label={ariaLabel}
+            >
+                {label}
+            </a>
+        </div>
+    );
+};
 
 export default Footer;
