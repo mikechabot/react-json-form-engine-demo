@@ -1,7 +1,7 @@
 import _noop from 'lodash/noop';
 import isStorageAvailable from './is-storage-available';
 
-const APP_PREFIX = '__REACT_FORM_ENGINE__';
+const APP_PREFIX = '__REACT_JSON_FORM_ENGINE__';
 
 const STICKY_PREFIX = {
     TAB: 'TAB__'
