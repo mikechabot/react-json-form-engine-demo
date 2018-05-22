@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormEngine, Form } from 'react-json-form-engine';
+import { Tabs, Tab } from 'react-tabify';
 
 import LogService from './services/log-service';
 import LocalStorageService from './services/local-storage/local-storage-service';
@@ -8,7 +9,6 @@ import Footer from './Footer';
 import AppPanels from './AppPanels';
 import Navbar from './components/common/bulma/Navbar';
 
-import { Tabs, Tab } from './components/common/tabs';
 import { Flex } from './components/common';
 
 import JSON_FORMS from './examples';
