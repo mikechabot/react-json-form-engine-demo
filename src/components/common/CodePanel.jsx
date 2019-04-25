@@ -5,9 +5,9 @@ import Icon from './Icon';
 import CodeBlock from './CodeBlock';
 import Flex from './glamorous/Flex';
 
-const CodePanel = ({ title, icon, content }) => {
+const CodePanel = ({ title, icon, content, height }) => {
     return (
-        <Flex column flex={1} height="100%" flexShrink={0} className="panel code-panel m-left--x-small">
+        <Flex column flex={1} height={height || '100%'} flexShrink={0} className="panel code-panel m-left--x-small">
             <p className="panel-heading">
                 <Icon icon={icon} />&nbsp;{title}
             </p>

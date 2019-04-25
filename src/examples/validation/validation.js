@@ -64,7 +64,15 @@ export default {
                             type: 'number',
                             title: 'Number field',
                             min: 0,
-                            max: 5
+                            max: 25,
+                        },
+                        {
+                            id: 'num3',
+                            type: 'number',
+                            title: 'Range field',
+                            min: 0,
+                            max: 25,
+                            required: true
                         }
                     ]
                 }
@@ -75,15 +83,22 @@ export default {
             title: 'Regex',
             subsections: [
                 {
-                    id: 'Regex-Subsection',
-                    title: 'Add a Regex to any String field',
+                    id: 'subsectionRegex',
+                    title: 'Add a Regex to any String or Number field',
                     subtitle: 'Useful for validating emails, URLS, etc.',
                     fields: [
                         {
                             id: 'str3',
                             type: 'string',
-                            title: 'Satisfy the condition by typing "foobar!" (no quotes)',
-                            pattern: '^foobar!$',
+                            title: 'String Regex',
+                            pattern: '^foobar$',
+                            required: true
+                        },
+                        {
+                            id: 'num4',
+                            type: 'number',
+                            title: 'Number Regex',
+                            pattern: '^3',
                             required: true
                         }
                     ]
@@ -110,7 +125,13 @@ export default {
         num2: {
             hint: 'Min: 0, Max: 5. Try entering a value outside the range.'
         },
-        str3: {
+        num3: {
+            hint: 'This field is also required, try entering some text, and then removing it.',
+            component: {
+                type: 'range'
+            }
+        },
+        num4: {
             hint: 'This field is also required, try entering some text, and then removing it.'
         }
     }

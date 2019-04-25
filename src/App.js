@@ -11,6 +11,8 @@ import Navbar from './components/common/bulma/Navbar';
 
 import { Flex } from './components/common';
 
+import 'react-json-form-engine/dist/css/styles.min.css';
+
 import JSON_FORMS from './examples';
 const STORAGE_KEY = 'EXAMPLE_APP';
 
@@ -39,15 +41,17 @@ class App extends React.Component {
     render() {
         const { instance } = this.state;
         return (
-            <Flex column className="full-height" flexShrink={0}>
+            <Flex column className="full-height">
                 {this._renderHeader()}
-                <Tabs
-                    id="react-form-engine-example"
-                    activeKey={this.state.activeKey}
-                    onSelect={this._handleTabSelect}
-                >
-                    {this._renderTabs(instance)}
-                </Tabs>
+                <div style={{height: '100%', overflowY: 'auto', display: 'flex'}}>
+                    <Tabs
+                        id="react-form-engine-example"
+                        activeKey={this.state.activeKey}
+                        onSelect={this._handleTabSelect}
+                    >
+                        {this._renderTabs(instance)}
+                    </Tabs>
+                </div>
                 <Footer />
             </Flex>
         );
@@ -69,10 +73,9 @@ class App extends React.Component {
         const { instances } = this.state;
 
         let instance = instances[form.id];
-        if (!instance || !instance.isValid()) {
-            const options = { liveValidation: true };
+        if (!instance || !instance.isValidDefinition()) {
             // Generate instance from JSON
-            instance = new FormEngine(form, null, options);
+            instance = new FormEngine(form, null);
             instances[form.id] = instance;
         }
 
@@ -98,13 +101,15 @@ class App extends React.Component {
     _renderTabContent(form, index, instance) {
         if (this.state.activeKey === index && instance) {
             return (
-                <Flex flexWrap="wrap" className="full-height section" flexShrink={0}>
-                    <Flex flexShrink={0} flex={index > 4 ? 2 : 0.75} minWidth={425}>
-                        <Form
-                            instance={instance}
-                            onUpdate={this._onFormUpdate.bind(this)}
-                            onSubmit={this._onSubmit.bind(this)}
-                        />
+                <Flex className="full-height full-width section container is-fluid is-fullwidth" flexShrink={0}>
+                    <Flex flexShrink={0} flex={index > 5 ? 1.5 : 0.75} minWidth={425} overflow="auto">
+                        <div style={{height: '100%', scroll:'auto', width: '100%'}}>
+                            <Form
+                                instance={instance}
+                                onUpdate={this._onFormUpdate.bind(this)}
+                                onSubmit={this._onSubmit.bind(this)}
+                            />
+                        </div>
                     </Flex>
                     <Flex flex={2}>
                         <AppPanels instance={instance} form={form} />
@@ -125,7 +130,7 @@ class App extends React.Component {
         const { instance } = this.state;
         const title = instance.getFormTitle();
         LogService.logGroup(`Form Instance (${title})`, instance);
-        LogService.logGroup(`Instance Model (${title})`, instance.getModel().findAll());
+        LogService.logGroup(`Instance Model (${title})`, instance.getModel());
     }
 
     _onFormUpdate(changeEvent) {
