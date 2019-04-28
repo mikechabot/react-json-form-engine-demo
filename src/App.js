@@ -43,7 +43,7 @@ class App extends React.Component {
         return (
             <Flex column className="full-height">
                 {this._renderHeader()}
-                <div style={{height: '100%', overflowY: 'auto', display: 'flex'}}>
+                <div style={{ height: '100%', overflowY: 'auto', display: 'flex' }}>
                     <Tabs
                         id="react-form-engine-example"
                         activeKey={this.state.activeKey}
@@ -101,12 +101,14 @@ class App extends React.Component {
     _renderTabContent(form, index, instance) {
         if (this.state.activeKey === index && instance) {
             return (
-                <Flex className="full-height full-width section container is-fluid is-fullwidth" flexShrink={0}>
+                <Flex
+                    className="full-height full-width section container is-fluid is-fullwidth"
+                    flexShrink={0}
+                >
                     <Flex flexShrink={0} flex={index > 5 ? 1.5 : 0.75} minWidth={425} overflow="auto">
-                        <div style={{height: '100%', scroll:'auto', width: '100%'}}>
+                        <div style={{ height: '100%', scroll: 'auto', width: '100%' }}>
                             <Form
                                 instance={instance}
-                                onUpdate={this._onFormUpdate.bind(this)}
                                 onSubmit={this._onSubmit.bind(this)}
                             />
                         </div>
@@ -131,12 +133,6 @@ class App extends React.Component {
         const title = instance.getFormTitle();
         LogService.logGroup(`Form Instance (${title})`, instance);
         LogService.logGroup(`Instance Model (${title})`, instance.getModel());
-    }
-
-    _onFormUpdate(changeEvent) {
-        // You might want to do something with the latest change
-        // event, and then use "setState", otherwise just force a refresh
-        this.forceUpdate();
     }
 
     _setLocalStorage(activeKey) {
