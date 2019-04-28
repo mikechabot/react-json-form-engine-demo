@@ -80,7 +80,7 @@ export default {
                                             ],
                                             showCondition: {
                                                 type: 'EQUAL',
-                                                expression: [
+                                                expressions: [
                                                     {
                                                         type: 'FORM_RESPONSE',
                                                         id: 'bool5'
