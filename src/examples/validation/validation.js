@@ -31,7 +31,7 @@ export default {
                         {
                             id: 'array1',
                             type: 'array',
-                            title: 'Multiselect',
+                            title: 'Option Group',
                             required: true,
                             options: [
                                 { id: 'op1', title: 'Option 1' },
@@ -64,7 +64,7 @@ export default {
                             type: 'number',
                             title: 'Number field',
                             min: 0,
-                            max: 25,
+                            max: 25
                         },
                         {
                             id: 'num3',

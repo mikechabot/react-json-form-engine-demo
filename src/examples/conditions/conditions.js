@@ -37,14 +37,16 @@ export default {
                                                             title: 'Grandchild',
                                                             showCondition: {
                                                                 type: 'CONTAINS',
-                                                                expression1: {
-                                                                    type: 'CONST',
-                                                                    value: 'op1'
-                                                                },
-                                                                expression2: {
-                                                                    type: 'FORM_RESPONSE',
-                                                                    id: 'arr6'
-                                                                }
+                                                                expressions: [
+                                                                    {
+                                                                        type: 'FORM_RESPONSE',
+                                                                        id: 'arr6'
+                                                                    },
+                                                                    {
+                                                                        type: 'CONST',
+                                                                        value: 'op1'
+                                                                    }
+                                                                ]
                                                             }
                                                         }
                                                     ]
@@ -61,14 +63,16 @@ export default {
                                                             max: 20,
                                                             showCondition: {
                                                                 type: 'CONTAINS',
-                                                                expression1: {
-                                                                    type: 'CONST',
-                                                                    value: 'op2'
-                                                                },
-                                                                expression2: {
-                                                                    type: 'FORM_RESPONSE',
-                                                                    id: 'arr6'
-                                                                }
+                                                                expressions: [
+                                                                    {
+                                                                        type: 'FORM_RESPONSE',
+                                                                        id: 'arr6'
+                                                                    },
+                                                                    {
+                                                                        type: 'CONST',
+                                                                        value: 'op2'
+                                                                    }
+                                                                ]
                                                             }
                                                         }
                                                     ]
@@ -76,14 +80,16 @@ export default {
                                             ],
                                             showCondition: {
                                                 type: 'EQUAL',
-                                                expression1: {
-                                                    type: 'CONST',
-                                                    value: true
-                                                },
-                                                expression2: {
-                                                    type: 'FORM_RESPONSE',
-                                                    id: 'bool5'
-                                                }
+                                                expression: [
+                                                    {
+                                                        type: 'FORM_RESPONSE',
+                                                        id: 'bool5'
+                                                    },
+                                                    {
+                                                        type: 'CONST',
+                                                        value: true
+                                                    }
+                                                ]
                                             }
                                         },
                                         {
@@ -94,14 +100,16 @@ export default {
                                             max: 10,
                                             showCondition: {
                                                 type: 'EQUAL',
-                                                expression1: {
-                                                    type: 'CONST',
-                                                    value: true
-                                                },
-                                                expression2: {
-                                                    type: 'FORM_RESPONSE',
-                                                    id: 'bool5'
-                                                }
+                                                expressions: [
+                                                    {
+                                                        type: 'FORM_RESPONSE',
+                                                        id: 'bool5'
+                                                    },
+                                                    {
+                                                        type: 'CONST',
+                                                        value: true
+                                                    }
+                                                ]
                                             }
                                         }
                                     ]
@@ -117,14 +125,16 @@ export default {
                             showCondition: {
                                 type: 'EQUAL',
                                 not: true,
-                                expression1: {
-                                    type: 'CONST',
-                                    value: true
-                                },
-                                expression2: {
-                                    type: 'FORM_RESPONSE',
-                                    id: 'bool5'
-                                }
+                                expressions: [
+                                    {
+                                        type: 'FORM_RESPONSE',
+                                        id: 'bool5'
+                                    },
+                                    {
+                                        type: 'CONST',
+                                        value: true
+                                    }
+                                ]
                             },
                             fields: [
                                 {
@@ -194,14 +204,16 @@ export default {
                                             max: 5,
                                             showCondition: {
                                                 type: 'CONTAINS',
-                                                expression1: {
-                                                    type: 'CONST',
-                                                    value: 'op1'
-                                                },
-                                                expression2: {
-                                                    type: 'FORM_RESPONSE',
-                                                    id: 'arr3'
-                                                }
+                                                expressions: [
+                                                    {
+                                                        type: 'FORM_RESPONSE',
+                                                        id: 'arr3'
+                                                    },
+                                                    {
+                                                        type: 'CONST',
+                                                        value: 'op1'
+                                                    }
+                                                ]
                                             }
                                         }
                                     ]
@@ -226,14 +238,16 @@ export default {
                                             ],
                                             showCondition: {
                                                 type: 'CONTAINS',
-                                                expression1: {
-                                                    type: 'CONST',
-                                                    value: 'op2'
-                                                },
-                                                expression2: {
-                                                    type: 'FORM_RESPONSE',
-                                                    id: 'arr3'
-                                                }
+                                                expressions: [
+                                                    {
+                                                        type: 'FORM_RESPONSE',
+                                                        id: 'arr3'
+                                                    },
+                                                    {
+                                                        type: 'CONST',
+                                                        value: 'op2'
+                                                    }
+                                                ]
                                             }
                                         }
                                     ]
@@ -257,14 +271,16 @@ export default {
                                             ],
                                             showCondition: {
                                                 type: 'CONTAINS',
-                                                expression1: {
-                                                    type: 'CONST',
-                                                    value: 'op3'
-                                                },
-                                                expression2: {
-                                                    type: 'FORM_RESPONSE',
-                                                    id: 'arr3'
-                                                }
+                                                expressions: [
+                                                    {
+                                                        type: 'FORM_RESPONSE',
+                                                        id: 'arr3'
+                                                    },
+                                                    {
+                                                        type: 'CONST',
+                                                        value: 'op3'
+                                                    }
+                                                ]
                                             }
                                         }
                                     ]
@@ -285,14 +301,16 @@ export default {
                                             ],
                                             showCondition: {
                                                 type: 'CONTAINS',
-                                                expression1: {
-                                                    type: 'CONST',
-                                                    value: 'op4'
-                                                },
-                                                expression2: {
-                                                    type: 'FORM_RESPONSE',
-                                                    id: 'arr3'
-                                                }
+                                                expressions: [
+                                                    {
+                                                        type: 'FORM_RESPONSE',
+                                                        id: 'arr3'
+                                                    },
+                                                    {
+                                                        type: 'CONST',
+                                                        value: 'op4'
+                                                    }
+                                                ]
                                             }
                                         }
                                     ]
@@ -351,14 +369,16 @@ export default {
                                     title: 'Field',
                                     showCondition: {
                                         type: 'GREATER_THAN',
-                                        expression1: {
-                                            type: 'FORM_RESPONSE',
-                                            id: 'num5'
-                                        },
-                                        expression2: {
-                                            type: 'CONST',
-                                            value: 5
-                                        }
+                                        expressions: [
+                                            {
+                                                type: 'FORM_RESPONSE',
+                                                id: 'num5'
+                                            },
+                                            {
+                                                type: 'CONST',
+                                                value: 5
+                                            }
+                                        ]
                                     }
                                 }
                             ]
@@ -374,14 +394,43 @@ export default {
                                     title: 'Field',
                                     showCondition: {
                                         type: 'LESS_THAN',
-                                        expression1: {
-                                            type: 'FORM_RESPONSE',
-                                            id: 'num8'
-                                        },
-                                        expression2: {
-                                            type: 'CONST',
-                                            value: 5
-                                        }
+                                        expressions: [
+                                            {
+                                                type: 'FORM_RESPONSE',
+                                                id: 'num8'
+                                            },
+                                            {
+                                                type: 'CONST',
+                                                value: 5
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            id: 'num9',
+                            type: 'number',
+                            title: 'Between 25 and 75',
+                            min: 0,
+                            max: 100,
+                            fields: [
+                                {
+                                    id: 'str20',
+                                    type: 'string',
+                                    title: 'Field',
+                                    showCondition: {
+                                        type: 'BETWEEN',
+                                        expressions: [
+                                            {
+                                                type: 'FORM_RESPONSE',
+                                                id: 'num9'
+                                            },
+                                            {
+                                                type: 'CONST',
+                                                value: [25, 75]
+                                            }
+                                        ]
                                     }
                                 }
                             ]
@@ -426,7 +475,7 @@ export default {
         num8: {
             hint: 'Show child if < 5'
         },
-        num10: {
+        num19: {
             component: {
                 type: 'range'
             }

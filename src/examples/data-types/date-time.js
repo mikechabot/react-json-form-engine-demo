@@ -17,7 +17,8 @@ export default {
                         {
                             id: 'info',
                             type: 'info',
-                            title: 'Implements <a href="https://reactdatepicker.com/">react-datepicker</a>',
+                            title:
+                                'Implements <a href="https://reactdatepicker.com/">react-datepicker</a>',
                             content: `Any props that are available to <a href="https://reactdatepicker.com/">react-datepicker</a> 
                                     can be attached as field decorators. Such as <code>timeIntervals</code>, <code>dateFormat</code>, etc.`
                         },
