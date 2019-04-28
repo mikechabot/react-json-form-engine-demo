@@ -409,7 +409,7 @@ export default {
                             ]
                         },
                         {
-                            id: 'num9',
+                            id: 'num11',
                             type: 'number',
                             title: 'Between 25 and 75',
                             min: 0,
@@ -424,7 +424,7 @@ export default {
                                         expressions: [
                                             {
                                                 type: 'FORM_RESPONSE',
-                                                id: 'num9'
+                                                id: 'num11'
                                             },
                                             {
                                                 type: 'CONST',
@@ -475,7 +475,7 @@ export default {
         num8: {
             hint: 'Show child if < 5'
         },
-        num19: {
+        num11: {
             component: {
                 type: 'range'
             }
