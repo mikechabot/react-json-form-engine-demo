@@ -26,7 +26,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-json-form-engine": "^2.0.5",
+    "react-json-form-engine": "^2.0.6",
     "react-scripts": "1.1.4",
     "react-tabify": "^0.1.25"
   },
